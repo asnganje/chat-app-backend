@@ -1,6 +1,5 @@
 // get express which return a function
 const express = require('express')
-
 const config = require('./config/app')
 const router = require('./router')
 const bodyParser = require('body-parser')
