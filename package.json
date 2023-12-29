@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/asnganje/chat-app-backend/issues"
   },
-  "homepage": "https://github.com/asnganje/chat-app-backend#readme"
+  "homepage": "https://github.com/asnganje/chat-app-backend#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
