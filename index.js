@@ -2,18 +2,15 @@
 const express = require('express')
 
 const config = require('./config/app')
+const router = require('./router')
+const bodyParser = require('body-parser')
 
 const app = express()
+app.use(bodyParser.urlencoded({extended: true}))
+app.use(bodyParser.json())
+app.use(router)
 
 const port = config.appPort;
-
-app.get('/', (req, res)=> {
-    return res.send('Home page is here')
-})
-
-app.get('/login', (req,res)=> {
-    return res.send('This is the login page')
-})
 app.listen(port, ()=> {
     console.log(`App is listening on port ${port}`);
 })
